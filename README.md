@@ -11,10 +11,6 @@
 -   **Educational Documentation**: Integrated documentation explaining the logic, time complexity, and space complexity of each algorithm.
 -   **Responsive Design**: Works seamlessly across different screen sizes.
 
-## 🚀 Live Demo
-
-[Link to your live demo if applicable]
-
 ## 🛠️ Tech Stack
 
 -   **HTML5**: Structure and semantics.
