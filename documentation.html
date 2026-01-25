@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flow - Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        .doc-section {
+            margin-bottom: 3rem;
+        }
+
+        .doc-section h2 {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 0.5rem;
+        }
+
+        .doc-section h3 {
+            font-size: 1.25rem;
+            color: var(--text-color);
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .complexity-box {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+            display: inline-block;
+            min-width: 250px;
+        }
+
+        .complexity-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+        }
+
+        .complexity-label {
+            color: var(--text-muted);
+            font-weight: 600;
+        }
+
+        .complexity-value {
+            font-family: monospace;
+            color: var(--accent-color);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">Flow</div>
+        <div class="nav-links">
+            <a href="landing.html" class="nav-item">Home</a>
+            <a href="index.html" class="nav-item">Visualizer</a>
+            <a href="documentation.html" class="nav-item active" style="color: var(--primary-color);">Docs</a>
+            <a href="https://github.com/Pratik-Talegaonkar/Search-Sort-Visualizer" target="_blank"
+                class="nav-item">GitHub</a>
+        </div>
+    </nav>
+
+    <main class="visualizer-container" style="text-align: left; padding: 3rem;">
+        <h1 style="text-align: center; margin-bottom: 3rem; font-size: 2.5rem;">Algorithm Documentation</h1>
+
+        <section class="doc-section">
+            <h2>Bubble Sort</h2>
+            <p>Bubble Sort is a simple sorting algorithm that repeatedly steps through the list, compares adjacent
+                elements and swaps them if they are in the wrong order. The pass through the list is repeated until the
+                list is sorted.</p>
+            <div class="complexity-box">
+                <div class="complexity-item">
+                    <span class="complexity-label">Time Complexity (Best)</span>
+                    <span class="complexity-value">O(n)</span>
+                </div>
+                <div class="complexity-item">
+                    <span class="complexity-label">Time Complexity (Avg)</span>
+                    <span class="complexity-value">O(n²)</span>
+                </div>
+                <div class="complexity-item">
+                    <span class="complexity-label">Time Complexity (Worst)</span>
+                    <span class="complexity-value">O(n²)</span>
+                </div>
+                <div class="complexity-item">
+                    <span class="complexity-label">Space Complexity</span>
+                    <span class="complexity-value">O(1)</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="doc-section">
+            <h2>Selection Sort</h2>
+            <p>Selection Sort divides the input list into two parts: a sorted sublist of items which is built up from
+                left to right at the front (left) of the list and a sublist of the remaining unsorted items. The
+                algorithm proceeds by finding the smallest element in the unsorted sublist, exchanging (swapping) it
+                with the leftmost unsorted element, and moving the sublist boundaries.</p>
+            <div class="complexity-box">
+                <div class="complexity-item">
+                    <span class="complexity-label">Time Complexity</span>
+                    <span class="complexity-value">O(n²)</span>
+                </div>
+                <div class="complexity-item">
+                    <span class="complexity-label">Space Complexity</span>
+                    <span class="complexity-value">O(1)</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="doc-section">
+            <h2>Insertion Sort</h2>
+            <p>Insertion Sort builds the final sorted array (or list) one item at a time. It is much less efficient on
+                large lists than more advanced algorithms such as quicksort, heapsort, or merge sort.</p>
+            <div class="complexity-box">
+                <div class="complexity-item">
+                    <span class="complexity-label">Time Complexity (Best)</span>
+                    <span class="complexity-value">O(n)</span>
+                </div>
+                <div class="complexity-item">
+                    <span class="complexity-label">Time Complexity (Avg/Worst)</span>
+                    <span class="complexity-value">O(n²)</span>
+                </div>
+                <div class="complexity-item">
+                    <span class="complexity-label">Space Complexity</span>
+                    <span class="complexity-value">O(1)</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="doc-section">
+            <h2>Quick Sort</h2>
+            <p>Quick Sort is an efficient, comparison-based, divide and conquer sorting algorithm. It works by selecting
+                a 'pivot' element from the array and partitioning the other elements into two sub-arrays, according to
+                whether they are less than or greater than the pivot.</p>
+            <div class="complexity-box">
+                <div class="complexity-item">
+                    <span class="complexity-label">Time Complexity (Avg)</span>
+                    <span class="complexity-value">O(n log n)</span>
+                </div>
+                <div class="complexity-item">
+                    <span class="complexity-label">Time Complexity (Worst)</span>
+                    <span class="complexity-value">O(n²)</span>
+                </div>
+                <div class="complexity-item">
+                    <span class="complexity-label">Space Complexity</span>
+                    <span class="complexity-value">O(log n)</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="doc-section">
+            <h2>Merge Sort</h2>
+            <p>Merge Sort is an efficient, stable, comparison-based, divide and conquer sorting algorithm. Most
+                implementations produce a stable sort, meaning that the implementation preserves the input order of
+                equal elements in the sorted output.</p>
+            <div class="complexity-box">
+                <div class="complexity-item">
+                    <span class="complexity-label">Time Complexity</span>
+                    <span class="complexity-value">O(n log n)</span>
+                </div>
+                <div class="complexity-item">
+                    <span class="complexity-label">Space Complexity</span>
+                    <span class="complexity-value">O(n)</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="doc-section">
+            <h2>Linear Search</h2>
+            <p>Linear Search checks every element in the list sequentially until the desired element is found or the
+                list ends.</p>
+            <div class="complexity-box">
+                <div class="complexity-item">
+                    <span class="complexity-label">Time Complexity</span>
+                    <span class="complexity-value">O(n)</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="doc-section">
+            <h2>Binary Search</h2>
+            <p>Binary Search locates an item in a sorted array by repeatedly dividing the search interval in half. The
+                initial search interval is the whole array.</p>
+            <div class="complexity-box">
+                <div class="complexity-item">
+                    <span class="complexity-label">Time Complexity</span>
+                    <span class="complexity-value">O(log n)</span>
+                </div>
+            </div>
+        </section>
+
+    </main>
+</body>
+
+</html>

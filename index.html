@@ -1,16 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Flow</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <h1 class="header">Sorting Searching Simulator</h1>
-    <section class="data-container"></section>
-    <button class="btn" onclick="generate()">Generate New Array</button>
-    <button class="btn" onclick="SelectionSort(); disableButtons();">Start Selection Sort</button>
+    <nav class="navbar">
+        <div class="logo">Flow</div>
+        <div class="nav-links">
+            <a href="landing.html" class="nav-item">Home</a>
+            <a href="index.html" class="nav-item active" style="color: var(--primary-color);">Visualizer</a>
+            <a href="documentation.html" class="nav-item">Docs</a>
+            <a href="https://github.com/Pratik-Talegaonkar/Search-Sort-Visualizer" target="_blank"
+                class="nav-item">GitHub</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="visualizer-container">
+            <div class="controls">
+                <button class="btn btn-primary" onclick="generate()">Generate New Array</button>
+                <div class="control-group">
+                    <label for="size">Size</label>
+                    <input type="range" id="size" min="5" max="100" value="20" oninput="generate()">
+                </div>
+                <div class="control-group">
+                    <label for="speed">Speed</label>
+                    <input type="range" id="speed" min="1" max="5" value="3">
+                </div>
+            </div>
+
+            <section class="data-container" id="data-container"></section>
+        </div>
+
+        <section class="algo-catalog">
+            <!-- Sorting Algorithms -->
+            <div class="algo-card" onclick="runAlgo('Bubble')">
+                <h3>Bubble Sort</h3>
+                <p>Simple comparison-based sorting algorithm.</p>
+            </div>
+            <div class="algo-card" onclick="runAlgo('Selection')">
+                <h3>Selection Sort</h3>
+                <p>Repeatedly finds the minimum element and puts it at the beginning.</p>
+            </div>
+            <div class="algo-card" onclick="runAlgo('Insertion')">
+                <h3>Insertion Sort</h3>
+                <p>Builds the sorted array one item at a time.</p>
+            </div>
+            <div class="algo-card" onclick="runAlgo('Quick')">
+                <h3>Quick Sort</h3>
+                <p>Divide and conquer algorithm using a pivot.</p>
+            </div>
+            <div class="algo-card" onclick="runAlgo('Merge')">
+                <h3>Merge Sort</h3>
+                <p>Divide and conquer algorithm that splits and merges.</p>
+            </div>
+
+            <!-- Searching Algorithms -->
+            <div class="algo-card" onclick="runAlgo('Linear')">
+                <h3>Linear Search</h3>
+                <p>Sequentially checks each element.</p>
+            </div>
+            <div class="algo-card" onclick="runAlgo('Binary')">
+                <h3>Binary Search</h3>
+                <p>Search that works on sorted arrays by dividing the search interval in half.</p>
+            </div>
+        </section>
+    </main>
+
     <script src="script.js"></script>
 </body>
+
 </html>
