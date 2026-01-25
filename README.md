@@ -2,7 +2,6 @@
 
 **Flow** is a modern, interactive web application designed to visualize how common sorting and searching algorithms work. Built with a focus on aesthetics and user experience, it transforms complex algorithmic concepts into beautiful, fluid animations.
 
-![Project Preview](https://via.placeholder.com/800x400?text=Flow+Visualizer+Preview)
 
 ## ✨ Features
 
